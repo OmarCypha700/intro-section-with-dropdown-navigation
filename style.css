@@ -227,7 +227,7 @@ section{
         text-align: center;
         /* top: 95%; */
         margin-top:50rem ; 
-        padding:1rem;
+        padding-bottom:1rem;
     }
     .attribution a { color: hsl(48, 62%, 40%); }
 
