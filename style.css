@@ -1,0 +1,547 @@
+
+
+
+
+/* Mobile screens */
+@media screen and (min-width:320px) {
+    body{
+        margin-left: 0rem;
+        margin-right: 0rem;
+        margin-top: 1rem;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+.main-header{
+    display: none;
+}
+
+/* .hamburger_img{
+    float: right;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    z-index: 99;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    border: none;
+} */
+
+.hamburger{
+    position: relative;
+    display: block;
+    width: 3rem;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    border: none;
+    float: right;
+    margin-right: 1rem;
+    z-index: 2;
+}
+
+.hamburger .bar, .hamburger:before, .hamburger::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+.hamburger.is-active:before{
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.hamburger.is-active:after{
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.hamburger.is-active .bar{
+    opacity: 0;
+}
+
+
+
+.mobile-nav{
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 60%;
+    /* margin-top: 4rem; */
+    height: 90vh;
+    display: block;
+    background-color: white;
+    z-index: 1;
+    padding-top: 8rem;
+    transition: 0.4s ease-in;
+}
+
+.mobile-nav.is-active{
+    left: 40%;
+}
+
+.mobile-nav a{
+    display: block;
+    width: 80%;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 100;
+}
+
+ul li a:hover{
+    font-weight: 500;
+}
+
+ul li ul li{
+    display: none;
+    padding-left: 3rem;
+    opacity: inherit;
+}
+
+ul li:hover ul li{
+    display: block;
+    transition: 0.4s ease-in;
+    z-index: 1;
+}
+ul li ul li:hover{
+    background: rgb(236, 234, 234);
+}
+
+.log_register{
+    font-weight: 100;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.log_register a:hover{
+    font-weight: 500;
+}
+.log_register button{
+    margin: 0rem 2rem;
+    border-radius: 10px;
+    padding: 10px;
+    width: 10rem;
+    background: white;
+    cursor: pointer;
+    border: 1px solid;
+    font-size: 1rem;
+}
+
+.log_register button:hover{
+    border: 2px solid;
+}
+
+#title{
+    float: left;
+    padding-left: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+section{
+    position: relative;
+    width: 100%;
+}
+
+.writeup{
+    position: absolute;
+    width: 90%;
+    margin-top: 25rem;
+    padding: 0rem 1rem;
+}
+
+.writeup p{
+    font-size: 0.9rem;
+    font-weight: 100;
+    margin-top: -2rem;
+}
+.writeup button{
+    padding: 1.2rem;
+    border-radius: 0.7rem;
+    background: black;
+    color: white;
+    cursor: pointer;
+    margin:1rem 0rem 1rem 6rem ;
+    width: 50%;
+    font-size: 1rem;
+}
+.writeup button:hover{
+    background: white;
+    color: black;
+}
+
+.writeup h1{
+    font-size: 2.5rem;
+}
+
+.desktop-hero{
+    display: none;
+}
+.mobile-hero{
+    position: absolute;
+    width: 100%;
+    margin-top: 5rem;
+
+}
+.mobile-hero img{
+    width: 100%;
+}
+
+
+.mobile-logo li{
+    float: left;
+    width: 18%;
+    margin-top: 4rem;
+    padding-right: 1rem;
+    padding-left: 0.5rem;
+    }
+
+.mobile-logo img{
+    width: 100%;
+}
+
+    .mobile-logo{
+        position: absolute;
+        margin-top: 40rem;
+        list-style: none;
+    }
+
+    .desktop-logo{
+        display: none;
+    }
+
+    .attribution { 
+        position: absolute;
+        font-size: 1.2rem; 
+        text-align: center;
+        /* top: 95%; */
+        margin-top:50rem ; 
+    }
+    .attribution a { color: hsl(48, 62%, 40%); }
+
+}
+
+
+/* Tablets and ipads screen */
+@media screen and (min-width:768px) {
+
+    body{
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-top: 2rem;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .main-header{
+        display: block;
+    }
+
+    .mobile-header{
+        display: none;
+    }
+
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    ul li{
+        float: left;
+        width: 6rem;
+        height: 2rem;
+        text-align: center;
+        line-height: 2rem;
+    }
+    ul li a {
+        text-decoration: none;
+        color: black;
+        font-weight: 100;
+    }
+    ul li a:hover{
+        font-weight: 500;
+    }
+    ul li ul li{
+        display: none;
+        text-align: left;
+        padding-left: 0.5rem;
+        background: rgb(236, 234, 234);
+        opacity: inherit;
+        width: 7rem;
+    }
+    
+    ul li:hover ul li{
+        display: block;
+        z-index: 1;
+    }
+
+    #title{
+        float: left;
+        padding-right: 2rem;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+
+    .log_register{
+        float: right;
+        font-weight: 100;
+        cursor: pointer;
+    }
+    .log_register a:hover{
+        font-weight: 500;
+    }
+    .log_register button{
+        margin: 0rem;
+        border-radius: 10px;
+        padding: 8px;
+        width: 95px;
+        background: white;
+        cursor: pointer;
+        border: 1px solid;
+    }
+    
+    .log_register button:hover{
+        border: 2px solid;
+    }
+
+    section{
+        position: relative;
+        width: 100%;
+    }
+    
+    .writeup{
+        position: absolute;
+        width: 90%;
+        margin-top: 45rem;
+        left: 10.5%;
+    }
+    
+    .writeup p{
+        font-size: 1.2rem;
+        font-weight: 100;
+        margin-top: -2rem;
+    }
+    .writeup button{
+        padding: 0.8rem;
+        border-radius: 0.7rem;
+        background: black;
+        color: white;
+        cursor: pointer;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        margin: 0rem;
+        width: 8rem;
+    }
+    .writeup button:hover{
+        background: white;
+        color: black;
+    }
+
+    .writeup h1{
+        font-size: 4.5rem;
+    }
+
+    .desktop-hero{
+        display: none;
+    }
+
+    .mobile-hero{
+        position: absolute;
+        width: 100%;
+        margin-top: 10rem;
+
+    }
+    .mobile-hero img{
+        width: 100%;
+    }
+    
+    .mobile-logo{
+        display: none;
+    }
+    .desktop-logo{
+        display: block;
+    }
+    .desktop-logo li{
+        width: 7%;
+        margin-top: 2rem;
+        padding: 0px 11% 0rem 2rem;
+        }
+    
+        .attribution { 
+            position: absolute;
+            font-size: 1.2rem; 
+            text-align: center;
+            margin-top:77rem ; 
+            padding: 1rem;
+        }
+        .attribution a { color: hsl(48, 62%, 40%); }
+    
+}
+
+
+/* Desktop Screens */
+@media  screen and (min-width: 980px) {
+
+    body{
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-top: 2rem;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .main-header{
+        display: block;
+    }
+
+    .mobile-header{
+        display: none;
+    }
+
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    ul li{
+        float: left;
+        width: 8rem;
+        height: 2rem;
+        text-align: center;
+        line-height: 2rem;
+    }
+    
+    ul li a {
+        text-decoration: none;
+        color: black;
+        font-weight: 100;
+    }
+    ul li a:hover{
+        font-weight: 500;
+    }
+    ul li ul li{
+        display: none;
+        text-align: left;
+        padding-left: 1rem;
+        background: whitesmoke;
+    }
+    
+    ul li:hover ul li{
+        display: block;
+    }
+    
+    #title{
+        float: left;
+        padding-right: 2rem;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    
+    .log_register{
+        float: right;
+        font-weight: 100;
+        cursor: pointer;
+    }
+    .log_register a:hover{
+        font-weight: 500;
+    }
+    .log_register button{
+        margin: 0.5rem;
+        border-radius: 10px;
+        padding: 8px;
+        width: 95px;
+        background: white;
+        cursor: pointer;
+        border: 1px solid;
+    }
+    
+    .log_register button:hover{
+        border: 2px solid;
+    }
+    
+    section{
+        position: relative;
+        width: 100%;
+    }
+    
+    .writeup{
+        position: absolute;
+        width: 50%;
+        margin-top: 5rem;
+        left: 10.5%;
+    }
+    
+    .writeup h1{
+        font-size: 5rem;
+    }
+    
+    .writeup p{
+        font-size: 1rem;
+        font-weight: 100;
+        margin-top: -3rem;
+    }
+    .writeup button{
+        padding: 0.8rem;
+        border-radius: 0.7rem;
+        background: black;
+        color: white;
+        cursor: pointer;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        margin: 0rem;
+        width: 8rem;
+    }
+    .writeup button:hover{
+        background: white;
+        color: black;
+    }
+
+    .mobile-logo{
+        display: none;
+    }
+
+    .desktop-logo{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .desktop-logo li{
+    width: 7%;
+    margin-top: 5rem;
+    }
+    
+    .mobile-hero{
+        display: none;
+    }
+    
+
+    .desktop-hero{
+        display: block;
+        position: absolute;
+        width: 35%;
+        left: 65%;
+        margin-top: 4.5rem;
+    }
+    .desktop-hero img{
+        width: 100%;
+    }
+
+    .attribution { 
+        position: absolute;
+        font-size: 1.2rem; 
+        text-align: center;
+        /* top: 95%; */
+        margin-top:50rem ; 
+        padding: 1rem;
+    }
+    .attribution a { color: hsl(48, 62%, 40%); }
+}
