@@ -11,8 +11,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     
   </style>
@@ -21,7 +19,7 @@
   <main>
     <header class="main-header">
         <ul id="navbar">
-          <span id="title"><a>snap</a></span>
+          <li id="title">snap</li>
           <li><a href="#">Features <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg></a>
           <ul>
             <li><a href="#"><svg width="14" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14 3v12a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h1V1a1 1 0 1 1 2 0v1h2V1a1 1 0 1 1 2 0v1h2V1a1 1 0 0 1 2 0v1h1a1 1 0 0 1 1 1Zm-2 3H2v1h10V6Zm0 3H2v1h10V9Zm0 3H2v1h10v-1Z" fill="#726CEE"/></svg> Todo List</a></li>
@@ -48,15 +46,15 @@
     </header>
 
     <header class="mobile-header">
-      <span id="title"><a>snap</a></span>
+      <span id="title-mobile">snap</span>
 
 
       <button class="hamburger">
-        <div class="bar"></div>
+        <span class="bar"></span>
     </button>
 
       <nav>
-        <div class="mobile-nav">
+        <span class="mobile-nav">
 
           <ul>
             <li><a href="#">Features <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg></a>
@@ -83,12 +81,12 @@
             <button>Register</button>
           </div>
 
-        </div>
+        </span>
       </nav>
 
     </header>
 
-    <section>
+    <div class="writeup-section">
 
       <div class="writeup">
 
@@ -117,23 +115,21 @@
         <img src="./images/image-hero-mobile.png" alt="Hero-image">
       </div>
        
-      </section>
+    </div>
 
-      <section>
-        <div class="mobile-logo">
+      <div>
+        <ul class="mobile-logo">
            <li><img src="./images/client-databiz.svg" alt=""></li>  
             <li><img src="./images/client-audiophile.svg" alt=""></li>  
             <li><img src="./images/client-meet.svg" alt=""></li> 
             <li><img src="./images/client-maker.svg" alt=""></li>           
-        </div>
-      </section>
+        </ul>
+      </div>
      
- <section class="attribution">
+ <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/OmarCypha700" target="_blank">OmarCypha</a>.
- </section>
-
-
+ </div>
 
   </main>
 

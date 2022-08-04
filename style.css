@@ -15,16 +15,6 @@
     display: none;
 }
 
-/* .hamburger_img{
-    float: right;
-    padding-right: 2rem;
-    padding-top: 1rem;
-    z-index: 99;
-    cursor: pointer;
-    appearance: none;
-    background: none;
-    border: none;
-} */
 
 .hamburger{
     position: relative;
@@ -68,7 +58,6 @@
     top: 0;
     left: 100%;
     width: 60%;
-    /* margin-top: 4rem; */
     height: 90vh;
     display: block;
     background-color: white;
@@ -143,7 +132,7 @@ ul li ul li:hover{
     border: 2px solid;
 }
 
-#title{
+#title-mobile{
     float: left;
     padding-left: 2rem;
     font-size: 2rem;
@@ -172,7 +161,7 @@ section{
     background: black;
     color: white;
     cursor: pointer;
-    margin:1rem 0rem 1rem 6rem ;
+    margin:1rem 0rem 0rem 6rem ;
     width: 50%;
     font-size: 1rem;
 }
@@ -225,7 +214,6 @@ section{
         position: absolute;
         font-size: 1.2rem; 
         text-align: center;
-        /* top: 95%; */
         margin-top:50rem ; 
         padding-bottom:1rem;
     }
@@ -316,7 +304,7 @@ section{
         border: 2px solid;
     }
 
-    section{
+    .writeup-section{
         position: relative;
         width: 100%;
     }
@@ -471,7 +459,7 @@ section{
         border: 2px solid;
     }
     
-    section{
+    .writeup-section{
         position: relative;
         width: 100%;
     }
