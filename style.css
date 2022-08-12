@@ -216,6 +216,7 @@ section{
         text-align: center;
         margin-top:50rem ; 
         padding-bottom:1rem;
+        left: 30%;
     }
     .attribution a { color: hsl(48, 62%, 40%); }
 
@@ -373,6 +374,7 @@ section{
             text-align: center;
             margin-top:77rem ; 
             padding: 1rem;
+            left: 40%;
         }
         .attribution a { color: hsl(48, 62%, 40%); }
     
